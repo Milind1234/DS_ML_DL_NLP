@@ -1,0 +1,3 @@
+hey their this is data.txt file 
+hello welcome to this notes 
+here you will learn about the error handling and file handling
