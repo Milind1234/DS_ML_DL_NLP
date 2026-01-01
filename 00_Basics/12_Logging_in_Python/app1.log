@@ -1,0 +1,4 @@
+2026-01-01 20:31:11 - ArithmethicApp - DEBUG - Adding 10 + 15 = 25
+2026-01-01 20:31:11 - ArithmethicApp - DEBUG - Subtract 15 - 10 = 5
+2026-01-01 20:31:11 - ArithmethicApp - DEBUG - Multiplying 10 * 20 = 200
+2026-01-01 20:31:11 - ArithmethicApp - DEBUG - Dividing 20 / 10 = 2.0
