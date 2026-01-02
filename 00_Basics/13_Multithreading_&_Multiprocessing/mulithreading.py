@@ -24,13 +24,16 @@ print(finished_time)
 
 print("_______( Muli-Threading )")
 
+##create 2 threads
 t1 = threading.Thread(target = print_no)
 t2 = threading.Thread(target = print_alpha)
 
 time1 = time.time()
+## start the thread
 t1.start()
 t2.start()
 
+### Wait for the threads to complete
 t1.join()
 t2.join()
 finished_time1 = time.time() -time1
