@@ -8,12 +8,12 @@ import time
 def square_no():
     for i in range(5):
         time.sleep(1)
-        print(i**2)
+        print(f"Square: {i*i}") 
 
 def cube_no():
     for i in range(5):
-        time.sleep(5)
-        print(i**3)
+        time.sleep(1)
+        print(f"Cube: {i * i * i}")
     
 
 if __name__ == "__main__":
