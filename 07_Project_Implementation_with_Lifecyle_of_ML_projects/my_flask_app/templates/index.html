@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWI Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+    <div class="hero">
+
+        <div class="overlay">
+
+            <h1>🔥 Forest Fire Weather Index Prediction</h1>
+
+            <p>
+                Predict the Fire Weather Index using Machine Learning.
+                Enter weather and environmental parameters to estimate
+                the fire risk level.
+            </p>
+
+            <a href="{{ url_for('predict_datapoint') }}" class="btn">
+                Start Prediction
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
