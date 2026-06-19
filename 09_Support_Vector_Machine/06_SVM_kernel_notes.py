@@ -719,27 +719,27 @@ Start with RBF.
 # 17. SCIKIT-LEARN IMPLEMENTATION
 # =============================================================================
 
-from sklearn.svm import SVC
+# from sklearn.svm import SVC
 
 # Linear Kernel
 
-model1 = SVC(kernel='linear')
+# model1 = SVC(kernel='linear')
 
 # Polynomial Kernel
 
-model2 = SVC(kernel='poly', degree=3)
+# model2 = SVC(kernel='poly', degree=3)
 
 # RBF Kernel
 
-model3 = SVC(kernel='rbf', gamma='scale')
+# model3 = SVC(kernel='rbf', gamma='scale')
 
 # Sigmoid Kernel
 
-model4 = SVC(kernel='sigmoid')
+# model4 = SVC(kernel='sigmoid')
 
-model3.fit(X_train, y_train)
+# model3.fit(X_train, y_train)
 
-y_pred = model3.predict(X_test)
+# y_pred = model3.predict(X_test)
 
 
 """
@@ -857,6 +857,7 @@ Sigmoid Kernel.
 # =============================================================================
 
 """
+
 Linear Kernel:
 
 K(x,z)=xᵀz
@@ -871,13 +872,13 @@ K(x,z)=(xᵀz+c)^d
 
 RBF Kernel:
 
-K(x,z)=exp(-γ||x-z||²)
+K(x,z)=exp(-y||x-z||²)
 
 ------------------------------------------------
 
 Sigmoid Kernel:
 
-K(x,z)=tanh(γxᵀz+r)
+K(x,z)=tanh(yxᵀz+r)
 
 ------------------------------------------------
 
@@ -890,9 +891,8 @@ Controls influence of training points.
 Degree:
 
 Controls polynomial complexity.
+
 """
-
-
 # =============================================================================
 # 21. ONE-MINUTE REVISION
 # =============================================================================
