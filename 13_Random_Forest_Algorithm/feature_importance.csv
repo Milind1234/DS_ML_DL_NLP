@@ -1,0 +1,27 @@
+Feature,Importance
+num__Age,0.12407706499198642
+num__MonthlyIncome,0.12230228106675771
+num__DurationOfPitch,0.11357631082258864
+num__Passport,0.08427627020620697
+num__PitchSatisfactionScore,0.06474446034786657
+num__NumberOfTrips,0.06459918341740796
+num__NumberOfFollowups,0.04870428103107165
+num__PreferredPropertyStar,0.04838402845227722
+num__CityTier,0.039390550333577266
+num__TotalVisiting,0.038157710221994615
+cat__MaritalStatus_Unmarried,0.03531769841724841
+cat__Designation_Executive,0.03095017897148022
+cat__TypeofContact_Self Enquiry,0.02888135475489144
+cat__Gender_Male,0.028539528083703806
+cat__Occupation_Small Business,0.021415619831612612
+num__OwnCar,0.02117710513943692
+cat__Occupation_Salaried,0.019091904660431588
+cat__Occupation_Large Business,0.014925700745916664
+cat__MaritalStatus_Married,0.011683480860665158
+cat__Designation_Manager,0.009096571203815745
+cat__ProductPitched_Deluxe,0.008482618410020458
+cat__Designation_Senior Manager,0.006549826247612673
+cat__ProductPitched_Standard,0.006163065611319073
+cat__ProductPitched_Super Deluxe,0.005632016228276674
+cat__ProductPitched_King,0.00195820202377189
+cat__Designation_VP,0.001922987918061592
