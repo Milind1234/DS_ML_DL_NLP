@@ -149,11 +149,13 @@ activemq-data/
 
 # Environments
 .env
+.artifacts
 .envrc
 .venv
 .mlenv
 mlenv/
 env/
+artifacts/
 venv/
 ENV/
 env.bak/
