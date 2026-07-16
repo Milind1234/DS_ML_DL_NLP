@@ -81,6 +81,7 @@ class DataTransformation:
                     (
                         "ohe",
                         OneHotEncoder(
+                            drop = 'first',
                             handle_unknown="ignore",
                             sparse_output=False
                         )
