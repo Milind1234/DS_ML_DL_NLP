@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Predictor</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: #f4f7fb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1f2937;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 18px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e8f0ff;
+            color: #2563eb;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            max-width: 650px;
+            margin: 0 auto 35px;
+            color: #6b7280;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .predict-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .predict-btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+
+        .feature h3 {
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 700px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="badge">
+            Machine Learning Project
+        </div>
+
+        <h1>
+            Student Exam Performance Predictor
+        </h1>
+
+        <p class="description">
+            Predict a student's expected mathematics score using
+            demographic information, educational background,
+            test preparation status, and academic performance.
+        </p>
+
+        <a
+            href="{{ url_for('predict_datapoint') }}"
+            class="predict-btn"
+        >
+            Predict Math Score
+        </a>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>Machine Learning</h3>
+
+                <p>
+                    Uses a trained machine learning model to
+                    estimate student mathematics performance.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Data Processing</h3>
+
+                <p>
+                    User inputs are automatically transformed
+                    using the fitted preprocessing pipeline.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>Instant Prediction</h3>
+
+                <p>
+                    Enter student information and receive the
+                    predicted mathematics score instantly.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
