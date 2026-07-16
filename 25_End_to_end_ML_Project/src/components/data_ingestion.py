@@ -5,6 +5,8 @@ from src.logger import logging # Import our custom logging configuration
 import pandas as pd # Import pandas for reading and working with datasets
 from sklearn.model_selection import train_test_split # Import train_test_split to divide the dataset into training and testing data
 from dataclasses import dataclass # Import dataclass to easily create a configuration class
+from src.components.data_transformation import DataTransformation,DataTransformatiionConfig
+
 
 # @dataclass automatically creates useful methods like __init__
 # for the variables defined inside this class
@@ -174,4 +176,7 @@ if __name__ == "__main__":
     obj = DataIngestion()
 
     # Start the complete data ingestion process
-    obj.initiate_data_ingestion()
+    train_data,test_data = obj.initiate_data_ingestion()
+
+    data_transformation = DataTransformation()
+    data_transformation.initiate_data_transformation(train_data,test_data)
