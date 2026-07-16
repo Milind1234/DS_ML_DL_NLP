@@ -53,6 +53,9 @@ def evaluate_models(X_train, y_train, X_test, y_test, models, param):
             gs = GridSearchCV(
                 estimator=model,
                 param_grid=para,
+                n_jobs=-1,
+                verbose=1,
+                refit=True,
                 cv=3
             )
 
