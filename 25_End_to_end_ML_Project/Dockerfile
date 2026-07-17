@@ -1,8 +1,11 @@
 FROM python:3.9-slim-buster
+
 WORKDIR /app
-COPY ./app
 
-RUN apt update -y && apt install awscli -y
+COPY . /app
 
-RUN pip install -r requirements.txt
-CMD ['python3','app.py']
+RUN apt-get update -y && apt-get install -y awscli
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "app.py"]
